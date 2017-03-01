@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link href="temporal.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="decision"> 
+      <div class="wrap2">
+        <form class="opciones" action="" name="formularioRegistros">
+          <h1>TIPO DE CONTRATO</h1>
+          <div class="esp">
+            <div class="seleccion">
+              <select id="select" onChange="selec()" required="required" name="selectOpns">
+                <option value="" selected="selected" disabled="disabled">seleccione </option>
+                <option value="fecha">Contrato de Aprendiz</option>
+                <option value="fecha">Vinculo Laboral</option>
+                <option value="fecha">Pasantias</option>
+                <option value="hora">Monitorias                </option>
+              </select>
+              <div class="fecha" name="definido">
+                <label class="inicio" for="inicia">Inicia                                  </label>
+                <input class="inicio" type="date" name="inicia"/>
+                <label class="termina" for="termina">Termina                                                                </label>
+                <input class="termina" type="date" name="termina" label="termina"/>
+              </div>
+              <div class="hora" name="temporal" style="display: ;">                  
+                <label class="horas" for="horas">Horas a Realizar                    </label>
+                <input class="horas" type="datetime" placeholder="HH:mm"/>
+              </div>
+            </div>
+            <input class="btn-submit" type="submit" value="Enviar"/>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="funcion.js"></script>
+  </body>
+</html>

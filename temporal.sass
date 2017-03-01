@@ -1,0 +1,143 @@
+$primary: #c0c0c0
+$light-primary: #e9e9e9
+$white: #f5f5f5
+$divider: #B6B6B6
+$error: #D32F2F
+$letra: #666666
+
+$borde: 2px
+$font-family: arial
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+body
+	background: $white
+	font-family: $font-family
+	border-top: 30px solid $primary
+	
+h1 
+	text-align: center
+	color: #808080
+	font-size: -95%
+	padding: 10px 
+.decision
+	width: 100%
+	color: $letra
+	padding: 40px
+	.opciones
+        width: 100%
+        margin: auto
+        .seleccion
+            position: relative
+            margin: 0
+            left: 20%
+            color: $letra
+            select 
+                text-align: center
+                text-anchor: 20px
+                font-size: 20px
+                background-color: $white
+                border-width: 10px
+                border-style: none
+                padding: 16px
+                margin-bottom: 32px	
+                border-color: $white
+                border: $borde
+                width: 60%
+                max-width: 1000px
+                height: 70%
+                max-height: 1000px
+                &:focus,	
+                &:active
+                    outline: none
+                    color: #000
+                    border: none
+                &.error
+                    color: $error
+                    border-color: $error
+                    background: $error
+.wrap2
+	width: 90%
+	max-width: 500px
+	padding: 40px
+	margin: auto
+	background: #fff
+	box-shadow: 0px 0px 3px grey
+.decision
+	width: 100%
+	color: $letra
+	padding: 40px
+	.opciones
+        width: 90%
+        color: $letra
+        margin: auto
+        .fecha
+            display: none
+            position: relative
+            margin-right: 32px
+            input[type="date"],
+            input[type="datetime"]
+                font-family: $font-family
+                font-size: 12px
+                color: $letra
+                width: 30%
+                height: 15%
+                margin-bottom: 32px
+                outline: none
+                padding: 12px
+                background: $white
+                border-style: hidden
+                border: none
+                border: $borde 
+                border-color: $letra
+                &:focus,
+                &:active
+                    outline: none
+                    border-bottom: $borde
+                &.error
+                    border-bottom: $borde
+                    border-color: $error
+        .hora
+            display: none
+            position: relative
+            margin-right: 32px
+            input[type="datetime"]
+                font-family: $font-family
+                font-size: 12px
+                color: $letra
+                width: 30%
+                height: 17%
+                margin-bottom: 32px
+                outline: none
+                padding: 12px
+                background: $white
+                border-style: hidden
+                border: none
+                border: $borde 
+                border-color: $letra
+                &:focus,
+                &:active
+                    outline: none
+                    border-bottom: $borde 
+                &.error
+                    border-bottom: $borde
+                    border-color: $error
+        input[type="submit"]
+            background: $primary
+            border-radius: 1px
+            border: $borde solid $white
+            color: #fff
+            cursor: pointer
+            display: inline-block
+            font-family: $font-family
+            font-size: 16px
+            padding: 15px
+            width: 100%
+            -webkit-transition: all .3s ease
+            -o-transition: all .3s ease
+            transition: all .3s ease
+            &:hover
+                background: #1976D2

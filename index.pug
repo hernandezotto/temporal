@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Document
+        link(href="temporal.css", rel="stylesheet")
+    
+    body
+        .decision 
+                .wrap2
+                    form.opciones(action="",name="formularioRegistros")
+                        h1 TIPO DE CONTRATO
+                        .esp
+                            .seleccion
+                                                    
+                                select#select(onChange="selec()",required,name="selectOpns")
+                                    option(value="",selected,disabled) seleccione 
+                                    option(value="fecha") Contrato de Aprendiz
+                                    option(value="fecha") Vinculo Laboral
+                                    option(value="fecha") Pasantias
+                                    option(value="hora") Monitorias                
+                                .fecha(name="definido")
+                                    label.inicio(for="inicia") Inicia                                  
+                                    input.inicio(type="date",name="inicia") 
+                                    label.termina(for="termina") Termina                                                                
+                                    input.termina(type="date",name="termina",label="termina")
+                                .hora(name="temporal",style="display: ;")                   
+                                    label.horas(for="horas") Horas a Realizar                    
+                                    input.horas(type="datetime",placeholder="HH:mm")
+                            input.btn-submit(type="submit", value="Enviar")
+                            
+        script(src="funcion.js")
+        
+        
+                    
+        
