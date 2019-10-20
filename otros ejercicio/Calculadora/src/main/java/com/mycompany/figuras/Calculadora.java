@@ -32,6 +32,6 @@ public class Calculadora {
       System.out.println("el resultodo de la suma "+numeroa+" + "+numerob+" = " + suma);  
       System.out.println("el resultodo de resta "+numeroa+" - "+numerob+" = "+ resta);   
       System.out.println("el resultodo de multiplicación "+numeroa+" X "+numerob+" = "+ multiplicacion);   
-      System.out.println("el resultodo de division \n \n"+numeroa+" / "+numerob+" = " + division);   
+      System.out.println("el resultodo de division "+numeroa+" / "+numerob+" = " + division+"\n \n");   
     }
 }
