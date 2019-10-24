@@ -1,7 +1,6 @@
 
 package biblioteca;
 
-import java.io.InputStream;
 
 
 public class libro {
@@ -25,7 +24,4 @@ public class libro {
         System.out.println("Calificacion del libro: "+ calificacion);
     }
 
-    String nextLine() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
