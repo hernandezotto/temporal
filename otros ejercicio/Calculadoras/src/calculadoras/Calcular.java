@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.figuras;
+package calculadoras;
 
 /**
  *
- * @author investigacion03
+ * @author otogu
  */
-public class Calculadora {
-    
+public class Calcular {
     int suma, resta, multiplicacion,division; 
     
     public void sumar(int numeroA, int numeroB){
@@ -34,4 +33,5 @@ public class Calculadora {
       System.out.println("el resultodo de multiplicación "+numeroa+" X "+numerob+" = "+ multiplicacion);   
       System.out.println("el resultodo de division "+numeroa+" / "+numerob+" = " + division+"\n \n");   
     }
+    
 }
