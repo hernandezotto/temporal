@@ -1,30 +1,38 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package cuentabacaria;
 
-/**
- *
- * @author investigacion03
- */
-public class Cuenta {
-    final Integer cuenta;
-    Float saldo;
+public class Cuenta extends Persona{
+    private final int nroCta;
+    private String mora;
+    private int saldo;
+
+    public Cuenta(int nroCta, String mora, int saldo, String nombre, String apellido, int telefono, int documento, int cant) {
+        super(nombre, apellido, telefono, documento, cant);
+        this.nroCta = nroCta;
+        this.mora = mora;
+        this.saldo = saldo;
+    }
+
+
+    public int getNro() {
+        return nroCta;
+    }
+
+    public String getTipo() {
+        return mora;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
     
-    public Cuenta(int cuenta, float saldo) {
-        this.cuenta = cuenta;
+    public void setTipo(String mora) {
+        this.mora = mora;
+    }
+
+    public void setSaldo(int saldo) {
         this.saldo = saldo;
     }
     
-    public Integer getCuenta(){
-        return cuenta;
-    }
-    public Float getSaldo(){
-        return saldo;
-    }
-    public void setSaldo(float Saldo){
-         saldo=Saldo;
-    }
 }

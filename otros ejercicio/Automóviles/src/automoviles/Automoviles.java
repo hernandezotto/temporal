@@ -17,7 +17,6 @@ public class Automoviles {
     List<coches>Coches=new ArrayList();
     public static void main(String[] args) {
         Automoviles listas= new Automoviles();
-        listas.Coches = new ArrayList();
         listas.menu();
     }
     public void menu(){
