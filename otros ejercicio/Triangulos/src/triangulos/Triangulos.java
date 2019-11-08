@@ -18,7 +18,7 @@ public class Triangulos {
      */
     public static void main(String[] args) {
                 Scanner scanf = new Scanner (System.in);
-        Figura hipotenusas[] = new Figura [3];
+        figura hipotenusas[] = new figura [3];
         for(int i = 0;i<hipotenusas.length;i++){
             System.out.print("ingrese el cateto opuesto: ");
             float opuesto = scanf.nextFloat();
@@ -26,7 +26,7 @@ public class Triangulos {
             float ayacente = scanf.nextFloat();
             float hipotenusa=(float)Math.sqrt(Math.pow(ayacente,2)+Math.pow(opuesto,2));
             System.out.println("La hipotenusa del triangulo "+hipotenusa+"\n\n");
-            hipotenusas[i] = new Figura (opuesto, ayacente,hipotenusa);
+            hipotenusas[i] = new figura (opuesto, ayacente,hipotenusa);
         }
         for(int i = 0;i<hipotenusas.length;i++){
             System.out.println("elemento "+(i+1)+"\n");
