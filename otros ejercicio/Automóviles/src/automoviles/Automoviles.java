@@ -41,7 +41,7 @@ public class Automoviles {
                 modificarColorCoche();
                 break;
             case 4:
-                System.out.print("Saliendo del menu... !ADIOS¡");
+                System.out.print("Saliendo del menu... !ADIOS¡\n");
                 break;
             default:
                 System.out.print("!!Error¡¡ ... Debes seleccionar una opcion que sea valida");
@@ -72,14 +72,13 @@ public class Automoviles {
                "Se ingresados coches y su cantidad de ingreso es de"+Coches.size()+
                "\nLos Siguientes datos son:");
         for(int i=0; i<Coches.size();i++){
-            System.out.print("Caracteristicas del coche numero"+ (i+1) + 
-               "\nPlaca"+Coches.get(i).getMatricula()+
-               "\nColor"+Coches.get(i).getColor()+
-               "\nMarca"+Coches.get(i).getMarca()+
-               "\nModelo"+Coches.get(i).getModelo()+
-               "\nNumero de caballos"+Coches.get(i).getFuerza()+
-               "\n\nNumero de caballos"+Coches.get(i).getPuertas()+
-               "Coche"+(i+1)+"\n\n");
+            System.out.print("\n\nCaracteristicas del coche numero: "+ (i+1) + 
+               "\nPlaca: "+Coches.get(i).getMatricula()+
+               "\nColor: "+Coches.get(i).getColor()+
+               "\nMarca: "+Coches.get(i).getMarca()+
+               "\nModelo: "+Coches.get(i).getModelo()+
+               "\nNumero de caballos: "+Coches.get(i).getFuerza()+
+               "\nCantidad de puestas: "+Coches.get(i).getPuertas()+"\n\n\n");
                 }
         menu();
     }
@@ -88,16 +87,21 @@ public class Automoviles {
         System.out.print("Ingrese el numero del coche qu quiere cambiar: ");
         int NumeroDelCoche=scanf.nextInt();
         System.out.println("¿Decea  cambiar el color del color al coche?"+Coches.get(NumeroDelCoche-1).getMatricula()+"\nActualmente tiene color "+Coches.get(NumeroDelCoche-1).getColor()+
-                    "\n1.Si"+
-                    "\n\n1.No");
+                    "\n0.Si"+
+                    "\n1.No\n\n");
         int cambiarColorCoches=scanf.nextInt();
             
         if(cambiarColorCoches ==0){       
+            Scanner scanff=new Scanner(System.in);
             System.out.print("Ingrese el nuevo color: ");
-            String NuevoColorCoche=scanf.nextLine();
-            Coches.get(NumeroDelCoche).setColor(NuevoColorCoche);
-            System.out.print("Cambio el color del coche realizado con exito"+ NuevoColorCoche);
+            String color=scanff.nextLine();
+            String nuevoColorCoche=color;
+            Coches.get(NumeroDelCoche-1).setColor(nuevoColorCoche);
         }
+        System.out.print("\n\nCambio el color del coche realizado con exito\n\n");
+        menu();
+
+
     }
     
 }

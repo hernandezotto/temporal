@@ -9,19 +9,28 @@ public class libro {
     
     
     //método constructor
-    
+    public libro(){
+        this.titulo="";
+        this.autor="";
+        this.cantidadDePaginas=0;
+        this.calificacion=0;
+    }
     public libro(String tituloDelLibro, String autorDelLibro, int cantidadDEPaginasDElLibro, int calificacionDelLibro){
         titulo=tituloDelLibro;
         autor=autorDelLibro ;
         cantidadDePaginas=cantidadDEPaginasDElLibro;
         calificacion= calificacionDelLibro;
     }
-    
-    public void mostrar(){
-        System.out.println("Titulo del libro: "+ titulo);
-        System.out.println("Autor del libro: "+ autor);
-        System.out.println("Cantidad de paginas del libro: "+ cantidadDePaginas);
-        System.out.println("Calificacion del libro: "+ calificacion);
+    public String getTitulo(){
+        return titulo;
     }
-
+    public String getAutor(){
+        return autor;
+    }
+    public Integer getCanidad(){
+        return cantidadDePaginas;
+    }
+    public Integer getCalificacion(){
+       return calificacion;
+    }
 }
